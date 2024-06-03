@@ -21,4 +21,9 @@
   &__text {
     margin-bottom: 4.8rem;
   }
+  
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
