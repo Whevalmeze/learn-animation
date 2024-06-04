@@ -10,9 +10,6 @@ export default class Scroller {
         this.imageSection = imageSection;
         this.imageWrapper = imageSection.querySelector("div.image-wrapper");
         this.wrapperOffset = imageSection.offsetWidth - screenWidth;
-        console.log(screenWidth)
-        console.log(this.imageSection.offsetWidth)
-        console.log(this.wrapperOffset)
         this._animate();
     }
     _animate() {
