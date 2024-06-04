@@ -10,13 +10,14 @@ import Scroller from './animations/Scroller';
 
 class App {
     constructor() {
+        document.body.style.opacity = '1';
         this._createLenis(); //for creating new scroll effect
         this._render(); //for rendering the scroll effect
         this._createTextReveals(); //for creating text animation
         this._createButtons(); //for creating button animation
         this._createParralaxImages(); //for creating parralax animations
-        this._createList();
-        this._createScroller();
+        this._createList(); //for list line animation
+        this._createScroller(); //for scroll animation
     }
 
     _createLenis() {
