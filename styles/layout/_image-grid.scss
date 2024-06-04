@@ -1,5 +1,13 @@
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2.4rem;
+.image {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2.4rem;
+  }
+  &-wrapper{
+    height: 600px;
+    // filter: grayscale(1);
+    min-width: 300px;
+    min-height: 600px;
+  }
 }

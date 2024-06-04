@@ -4,6 +4,8 @@ import Observer from './classes/Observer';
 import TextReveal from './animations/TextReveal';
 import Button from './animations/Buttons';
 import ParralaxImage from './animations/ParralaxImage';
+import List from './animations/List';
+import Scroller from './animations/Scroller';
 
 
 class App {
@@ -13,6 +15,8 @@ class App {
         this._createTextReveals(); //for creating text animation
         this._createButtons(); //for creating button animation
         this._createParralaxImages(); //for creating parralax animations
+        this._createList();
+        this._createScroller();
     }
 
     _createLenis() {
@@ -48,6 +52,18 @@ class App {
         const images = [...document.querySelectorAll("[data-animation='parralaxImage']")];
         images.forEach(image => {
             new ParralaxImage({ imageSection: image })
+        })
+    }
+    _createList() {
+        const lists = [...document.querySelectorAll('.list__item')];
+        lists.forEach(list => {
+            new List({element: list})
+        })
+    }
+    _createScroller() {
+        const images = [...document.querySelectorAll(".image-grid")]
+        images.forEach(image => {
+            new Scroller({ imageSection : image })
         })
     }
 }
